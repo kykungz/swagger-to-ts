@@ -19,7 +19,7 @@ $ npm install -g @kykungz/swagger-to-ts
 $ swagger-to-ts COMMAND
 running command...
 $ swagger-to-ts (-v|--version|version)
-@kykungz/swagger-to-ts/1.0.0 darwin-x64 node-v10.20.1
+@kykungz/swagger-to-ts/1.0.1 darwin-x64 node-v10.20.1
 $ swagger-to-ts --help [COMMAND]
 USAGE
   $ swagger-to-ts COMMAND

@@ -7,6 +7,10 @@
     "swagger-to-ts": "./bin/run"
   },
   "bugs": "https://github.com/kykungz/swagger-to-ts/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "dependencies": {
     "@manifoldco/swagger-to-ts": "^2.0.0",
     "@oclif/command": "^1",
@@ -42,6 +46,8 @@
   "repository": "kykungz/swagger-to-ts",
   "scripts": {
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "build": "yarn prepack",
+    "release": "np",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
   },

@@ -41,7 +41,7 @@ class SwaggerToTs extends Command {
     this.log(chalk.yellow(`\n# 🤞 Loading spec from ${args.path}...`))
 
     if ((args.path as string).startsWith('http')) {
-      const res = await fetch('http://localhost:5000/doc-json')
+      const res = await fetch(args.path)
       json = await res.json()
       output = swaggerToTS(json)
     } else {

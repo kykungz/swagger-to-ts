@@ -1,7 +1,7 @@
 {
   "name": "@kykungz/swagger-to-ts",
   "description": "Generate TypeScript types from Swagger OpenAPI specs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Kongpon Charanwattanakit <jackykongpon@gmail.com>",
   "bin": {
     "swagger-to-ts": "./bin/run"

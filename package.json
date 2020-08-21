@@ -1,0 +1,49 @@
+{
+  "name": "@kykungz/swagger-to-ts",
+  "description": "Generate TypeScript types from Swagger OpenAPI specs",
+  "version": "0.0.0",
+  "author": "Kongpon Charanwattanakit <jackykongpon@gmail.com>",
+  "bin": {
+    "swagger-to-ts": "./bin/run"
+  },
+  "bugs": "https://github.com/kykungz/swagger-to-ts/issues",
+  "dependencies": {
+    "@manifoldco/swagger-to-ts": "^2.0.0",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "chalk": "^4.1.0",
+    "node-fetch": "^2.6.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/node": "^10",
+    "@types/node-fetch": "^2.5.7",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/kykungz/swagger-to-ts",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "swagger-to-ts"
+  },
+  "repository": "kykungz/swagger-to-ts",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
